@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Expense Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- AUTH BAR -->
+  <div class="auth-bar">
+    <button id="googleLogin">Sign in with Google</button>
+    <button id="logout">Logout</button>
+  </div>
+
+  <!-- APP -->
+  <div class="container hidden" id="app">
+
+    <h1>Daily Expense Tracker</h1>
+
+    <div class="section">
+      <h2>Income</h2>
+      <div id="incomeList"></div>
+      <button id="addIncome">+ Add Income</button>
+    </div>
+
+    <div class="section">
+      <h2>Expenses</h2>
+      <div id="expenseList"></div>
+      <button id="addExpense">+ Add Expense</button>
+    </div>
+
+    <div class="actions">
+      <button id="calculate">Calculate</button>
+      <button id="shareBtn">📤 Share as Image</button>
+    </div>
+
+    <div class="summary">
+      <p>Total Income: ₹<span id="totalIncome">0</span></p>
+      <p>Total Expenses: ₹<span id="totalExpenses">0</span></p>
+      <p>Savings: ₹<span id="savings">0</span></p>
+      <p>Highest Expense: <span id="maxCategory">-</span></p>
+    </div>
+
+    <canvas id="expenseChart"></canvas>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Hi, I am Himansu Kumar Sahu, I built Daily Expense Tracker as a side project
+    to solve my own expense tracking problems. No groups, No team – just me coding
+    away on weekends.
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
