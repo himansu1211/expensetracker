@@ -8,10 +8,10 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD4lBLWGS05lqIfV2FbL5jG3ygHUyaVKN4",
+  apiKey: "",
   authDomain: "expense-tracker-hks.firebaseapp.com",
   projectId: "expense-tracker-hks",
-  appId: "1:576142656812:web:f6702b73eacda8af175889"
+  appId: ""
 };
 
 const app = initializeApp(firebaseConfig);
